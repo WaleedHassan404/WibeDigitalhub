@@ -1,6 +1,6 @@
 /* ============================================================
    WIBE DIGITAL HUB — Premium CSS Design System
-   Ultra-premium dark-themed agency website
+   Premium light golden & ivory agency website
    ============================================================ */
 
 /* ─── Google Fonts Import ─── */
@@ -11,29 +11,29 @@
    ============================================================ */
 :root {
   /* ── Color Palette ── */
-  --primary:          #6C3AED;
-  --primary-light:    #8B5CF6;
-  --primary-dark:     #5B21B6;
-  --primary-rgb:      108, 58, 237;
-  --accent:           #06D6A0;
-  --accent-dark:      #05B88A;
-  --accent-rgb:       6, 214, 160;
+  --primary:          #8B6914;
+  --primary-light:    #B8860B;
+  --primary-dark:     #6B4F0A;
+  --primary-rgb:      139, 105, 20;
+  --accent:           #1A5276;
+  --accent-dark:      #154360;
+  --accent-rgb:       26, 82, 118;
 
   /* ── Surfaces ── */
-  --dark-bg:          #0F0F1A;
-  --surface:          #1A1A2E;
-  --surface-light:    #25253D;
-  --surface-lighter:  #2D2D4A;
+  --dark-bg:          #FDFBF7;
+  --surface:          #F5F0E6;
+  --surface-light:    #EDE6D6;
+  --surface-lighter:  #E5DCC8;
 
   /* ── Typography Colors ── */
-  --text-primary:     #F8FAFC;
-  --text-secondary:   #94A3B8;
-  --text-muted:       #64748B;
+  --text-primary:     #1B2A4A;
+  --text-secondary:   #4A5568;
+  --text-muted:       #718096;
 
   /* ── Borders & Glass ── */
-  --border:           rgba(108, 58, 237, 0.2);
-  --glass:            rgba(26, 26, 46, 0.8);
-  --glass-border:     rgba(255, 255, 255, 0.08);
+  --border:           rgba(139, 105, 20, 0.2);
+  --glass:            rgba(255, 255, 255, 0.65);
+  --glass-border:     rgba(139, 105, 20, 0.12);
 
   /* ── Typography ── */
   --font-family:      'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -79,12 +79,12 @@
   --transition-slower: 0.7s var(--ease-smooth);
 
   /* ── Shadows ── */
-  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.2);
-  --shadow-md:    0 4px 16px rgba(0, 0, 0, 0.3);
-  --shadow-lg:    0 8px 32px rgba(0, 0, 0, 0.4);
-  --shadow-xl:    0 12px 48px rgba(0, 0, 0, 0.5);
-  --shadow-glow:  0 0 30px rgba(var(--primary-rgb), 0.3);
-  --shadow-glow-accent: 0 0 30px rgba(var(--accent-rgb), 0.25);
+  --shadow-sm:    0 2px 8px rgba(139, 105, 20, 0.06);
+  --shadow-md:    0 4px 16px rgba(139, 105, 20, 0.08);
+  --shadow-lg:    0 8px 32px rgba(139, 105, 20, 0.1);
+  --shadow-xl:    0 12px 48px rgba(139, 105, 20, 0.14);
+  --shadow-glow:  0 0 30px rgba(var(--primary-rgb), 0.15);
+  --shadow-glow-accent: 0 0 30px rgba(var(--accent-rgb), 0.12);
 
   /* ── Z-Index Scale ── */
   --z-base:    1;
@@ -126,7 +126,8 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: var(--text-primary);
-  background-color: var(--dark-bg);
+  background: linear-gradient(180deg, #FDFBF7 0%, #F5EFE0 40%, #EADBBA 100%);
+  background-attachment: fixed;
   overflow-x: hidden;
   max-width: 100vw;
   min-height: 100vh;
@@ -177,7 +178,7 @@ p {
 }
 
 ::selection {
-  background-color: rgba(var(--primary-rgb), 0.35);
+  background-color: rgba(var(--primary-rgb), 0.2);
   color: var(--text-primary);
 }
 
@@ -211,7 +212,7 @@ p {
 
 /* ─── Gradient Text ─── */
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent) 50%, var(--primary-light) 100%);
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 40%, var(--accent) 100%);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -332,11 +333,11 @@ p {
 }
 
 .navbar.scrolled {
-  background: rgba(15, 15, 26, 0.85);
+  background: rgba(253, 251, 247, 0.88);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid var(--glass-border);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(139, 105, 20, 0.08);
   height: 70px;
 }
 
@@ -424,7 +425,7 @@ p {
   padding: 10px 24px;
   font-size: var(--font-size-sm);
   font-weight: 600;
-  color: var(--text-primary);
+  color: #FDFBF7;
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   border: none;
   border-radius: var(--radius-full);
@@ -488,7 +489,7 @@ p {
   width: 100%;
   height: 100vh;
   height: 100dvh;
-  background: rgba(15, 15, 26, 0.97);
+  background: rgba(253, 251, 247, 0.97);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   display: flex;
@@ -527,7 +528,7 @@ p {
   padding: 14px 36px;
   font-size: var(--font-size-lg);
   font-weight: 600;
-  color: var(--text-primary);
+  color: #FDFBF7;
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   border: none;
   border-radius: var(--radius-full);
@@ -556,7 +557,7 @@ p {
   overflow: hidden;
   overflow-x: clip;
   padding-top: var(--nav-height);
-  background: var(--dark-bg);
+  background: transparent;
 }
 
 /* ─── Animated gradient mesh background ─── */
@@ -667,7 +668,7 @@ p {
   padding: 16px 36px;
   font-size: var(--font-size-base);
   font-weight: 700;
-  color: #fff;
+  color: #FDFBF7;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   border: none;
   border-radius: var(--radius-full);
@@ -728,7 +729,7 @@ p {
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(139, 105, 20, 0.06);
   border-color: rgba(var(--primary-rgb), 0.4);
   transform: translateY(-3px);
   box-shadow: 0 4px 20px rgba(var(--primary-rgb), 0.15);
@@ -905,7 +906,7 @@ section {
    ============================================================ */
 #services,
 .services {
-  background: var(--dark-bg);
+  background: rgba(245, 240, 230, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -1053,7 +1054,7 @@ section {
    ============================================================ */
 #about,
 .about {
-  background: var(--surface);
+  background: rgba(234, 219, 186, 0.25);
   position: relative;
   overflow: hidden;
 }
@@ -1238,7 +1239,7 @@ section {
    ============================================================ */
 #contact,
 .contact {
-  background: var(--dark-bg);
+  background: transparent;
   position: relative;
   overflow: hidden;
 }
@@ -1398,7 +1399,7 @@ section {
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='%2394A3B8'%3E%3Cpath d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='%23718096'%3E%3Cpath d='M6 8L0 0h12z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 18px center;
   padding-right: 44px;
@@ -1426,7 +1427,7 @@ section {
   padding: 16px 32px;
   font-size: var(--font-size-base);
   font-weight: 700;
-  color: #fff;
+  color: #FDFBF7;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   border: none;
   border-radius: var(--radius-sm);
@@ -1544,7 +1545,7 @@ section {
    11. FOOTER
    ============================================================ */
 .footer {
-  background: var(--surface);
+  background: rgba(234, 219, 186, 0.35);
   position: relative;
   overflow: hidden;
 }
@@ -1602,7 +1603,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(139, 105, 20, 0.06);
   border: 1px solid var(--glass-border);
   border-radius: 10px;
   color: var(--text-muted);
@@ -1712,7 +1713,7 @@ section {
   padding-top: calc(var(--nav-height) + var(--space-16));
   padding-bottom: var(--space-24);
   min-height: 100vh;
-  background: var(--dark-bg);
+  background: transparent;
 }
 
 .legal-page .container {
